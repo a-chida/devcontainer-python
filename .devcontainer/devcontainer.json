@@ -1,0 +1,8 @@
+{
+    "name": "${localWorkspaceFolderBasename}",
+    "dockerComposeFile": "./compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "remoteUser": "${localEnv:USER}",
+    "updateRemoteUserUID": true
+}
