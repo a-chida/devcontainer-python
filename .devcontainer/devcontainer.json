@@ -4,5 +4,46 @@
     "service": "app",
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
     "remoteUser": "${localEnv:USER}",
-    "updateRemoteUserUID": true
+    "updateRemoteUserUID": true,
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // productivity
+                "amazonwebservices.aws-toolkit-vscode",
+                "alefragnani.Bookmarks",
+                "formulahendry.code-runner",
+                "streetsidesoftware.code-spell-checker",
+                "adpyke.codesnap",
+                "mikestead.dotenv",
+                "EditorConfig.EditorConfig",
+                "oderwat.indent-rainbow",
+                "VisualStudioExptTeam.vscodeintellicode",
+                "sgryjp.japanese-word-handler",
+                "ritwickdey.LiveServer",
+                "PKief.material-icon-theme",
+                "christian-kohler.path-intellisense",
+                "esbenp.prettier-vscode",
+                "Gruntfuggly.todo-tree",
+                "ICS.japanese-proofreading",
+                // for document
+                "yzhang.markdown-all-in-one",
+                "DavidAnson.vscode-markdownlint",
+                "bierner.markdown-mermaid",
+                // Git
+                "codezombiech.gitignore",
+                "mhutchie.git-graph",
+                "eamodio.gitlens",
+                // Docker
+                "ms-azuretools.vscode-docker"
+            ],
+            "settings": {
+                "aws.codeWhisperer.shareCodeWhispererContentWithAWS": false,
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "editor.formatOnSave": true,
+                "editor.guides.bracketPairs": true,
+                "editor.renderWhitespace": "all",
+                "workbench.iconTheme": "material-icon-theme"
+            }
+        }
+    }
 }
