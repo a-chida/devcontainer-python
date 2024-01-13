@@ -5,6 +5,7 @@
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
     "remoteUser": "${localEnv:USER}",
     "updateRemoteUserUID": true,
+    "postCreateCommand": "poetry install",
     "customizations": {
         "vscode": {
             "extensions": [
