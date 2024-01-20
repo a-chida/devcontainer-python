@@ -35,7 +35,15 @@
                 "mhutchie.git-graph",
                 "eamodio.gitlens",
                 // Docker
-                "ms-azuretools.vscode-docker"
+                "ms-azuretools.vscode-docker",
+                // Python
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.black-formatter",
+                "ms-python.isort",
+                "KevinRose.vsc-python-indent",
+                "njpwerner.autodocstring",
+                "LittleFoxTeam.vscode-python-test-adapter"
             ],
             "settings": {
                 "aws.codeWhisperer.shareCodeWhispererContentWithAWS": false,
@@ -43,7 +51,17 @@
                 "editor.formatOnSave": true,
                 "editor.guides.bracketPairs": true,
                 "editor.renderWhitespace": "all",
-                "workbench.iconTheme": "material-icon-theme"
+                "workbench.iconTheme": "material-icon-theme",
+                // Python
+                "python.languageServer": "Pylance",
+                "[python]": {
+                    "editor.defaultFormatter": "ms-python.black-formatter",
+                    "editor.formatOnSave": true,
+                    "editor.codeActionsOnSave": {
+                        "source.organizeImports": true
+                    }
+                },
+                "isort.args": ["--profile", "black"]
             }
         }
     }
