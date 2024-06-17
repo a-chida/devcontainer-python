@@ -10,7 +10,7 @@
         "vscode": {
             "extensions": [
                 // productivity
-                "amazonwebservices.aws-toolkit-vscode",
+                "amazonwebservices.amazon-q-vscode",
                 "alefragnani.Bookmarks",
                 "formulahendry.code-runner",
                 "streetsidesoftware.code-spell-checker",
@@ -46,7 +46,7 @@
                 "LittleFoxTeam.vscode-python-test-adapter"
             ],
             "settings": {
-                "aws.codeWhisperer.shareCodeWhispererContentWithAWS": false,
+                "amazonQ.shareContentWithAWS": false,
                 "editor.defaultFormatter": "esbenp.prettier-vscode",
                 "editor.formatOnSave": true,
                 "editor.guides.bracketPairs": true,
