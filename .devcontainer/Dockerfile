@@ -1,4 +1,4 @@
-FROM python:3.12.1
+FROM python:3.12
 
 WORKDIR /work
 
@@ -6,7 +6,7 @@ ARG USERNAME
 
 SHELL ["/bin/bash", "-c"]
 
-RUN apt update && apt install -y \
+RUN apt-get update && apt install -y \
         iputils-ping \
         iproute2 \
         jq \
@@ -15,8 +15,9 @@ RUN apt update && apt install -y \
         lsof \
         nkf \
         socat \
-        nodejs npm \
-    && apt clean \
+    && curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - \
+    && apt-get install -y nodejs \
+    && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && groupadd ${USERNAME} \
     && useradd -d /home/${USERNAME} -s /bin/bash -g ${USERNAME} -m ${USERNAME} \
