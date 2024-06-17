@@ -1,0 +1,68 @@
+{
+    "name": "${localWorkspaceFolderBasename}",
+    "dockerComposeFile": "./compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "remoteUser": "${localEnv:USER}",
+    "updateRemoteUserUID": true,
+    "postCreateCommand": "poetry install",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // productivity
+                "amazonwebservices.amazon-q-vscode",
+                "alefragnani.Bookmarks",
+                "formulahendry.code-runner",
+                "streetsidesoftware.code-spell-checker",
+                "adpyke.codesnap",
+                "mikestead.dotenv",
+                "EditorConfig.EditorConfig",
+                "oderwat.indent-rainbow",
+                "VisualStudioExptTeam.vscodeintellicode",
+                "sgryjp.japanese-word-handler",
+                "ritwickdey.LiveServer",
+                "PKief.material-icon-theme",
+                "christian-kohler.path-intellisense",
+                "esbenp.prettier-vscode",
+                "Gruntfuggly.todo-tree",
+                "ICS.japanese-proofreading",
+                // for document
+                "yzhang.markdown-all-in-one",
+                "DavidAnson.vscode-markdownlint",
+                "bierner.markdown-mermaid",
+                // Git
+                "codezombiech.gitignore",
+                "mhutchie.git-graph",
+                "eamodio.gitlens",
+                // Docker
+                "ms-azuretools.vscode-docker",
+                // Python
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.black-formatter",
+                "ms-python.isort",
+                "KevinRose.vsc-python-indent",
+                "njpwerner.autodocstring",
+                "LittleFoxTeam.vscode-python-test-adapter"
+            ],
+            "settings": {
+                "amazonQ.shareContentWithAWS": false,
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "editor.formatOnSave": true,
+                "editor.guides.bracketPairs": true,
+                "editor.renderWhitespace": "all",
+                "workbench.iconTheme": "material-icon-theme",
+                // Python
+                "python.languageServer": "Pylance",
+                "[python]": {
+                    "editor.defaultFormatter": "ms-python.black-formatter",
+                    "editor.formatOnSave": true,
+                    "editor.codeActionsOnSave": {
+                        "source.organizeImports": true
+                    }
+                },
+                "isort.args": ["--profile", "black"]
+            }
+        }
+    }
+}
